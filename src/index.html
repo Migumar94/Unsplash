@@ -7,12 +7,20 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<button id="btn">login</button>
-	<script src="login.js"></script>
-	
-	<input type="text" id="buscar" placeholder="Busca fotos e ilustraciones">
-	<button id="btnBuscar">Buscar</button>
-	<button id="logout" class="d-none">LogOut</button>
+
+	<header class="header">
+        <div class="header-container">
+            <h1 class="header-title">Galería de Fotos</h1>
+			<button id="logout" class="logout-btn d-none">LogOut</button>
+			<button id="btn"  class="logout-btn">logIn</button>
+            <div class="search-bar">
+                <input type="text" id="buscar" placeholder="Busca fotos e ilustraciones">
+                <button id="btnBuscar">🔍</button>
+            </div>
+        </div>
+    </header>
 	<div id="gallery"></div>
+	<script src="config.js"></script>
+	<script src="login.js" defer></script>
 </body>
 </html>

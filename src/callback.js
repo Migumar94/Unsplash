@@ -1,6 +1,6 @@
-const CLIENT_ID = 'I2ZwM9meo8GO0fVDJg0m-HbZm7GZbTL8teL8QwNQYMQ';  // Reemplázalo con tu Access Key de Unsplash
-const CLIENT_SECRET = 'Xhsf-4aXC4Fdw5cZddE4Kq_JbeYd2rDLWDc-x_KH5Eo';  // Reemplázalo con tu Secret Key de Unsplash
-const REDIRECT_URI = 'http://localhost:8080/callback';
+const CLIENT_ID = window.CONFIG.CLIENT_ID;  // Reemplázalo con tu Access Key de Unsplash
+const CLIENT_SECRET = window.CONFIG.CLIENT_SECRET;  // Reemplázalo con tu Secret Key de Unsplash
+const REDIRECT_URI = window.CONFIG.REDIRECT_URI;  // Debe coincidir con el Redirect URI de tu aplicación en Unsplash
 
 const handleCallback = async () => {
     const urlParams = new URLSearchParams(window.location.search);
